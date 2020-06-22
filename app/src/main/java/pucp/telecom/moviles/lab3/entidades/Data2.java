@@ -4,7 +4,7 @@ public class Data2 {
 
     private float longitud;
     private float latitud;
-    private Medicion[] mediciones;
+    private float[] mediciones;
 
     public float getLongitud() {
         return longitud;
@@ -22,11 +22,12 @@ public class Data2 {
         this.latitud = latitud;
     }
 
-    public Medicion[] getMediciones() {
+
+    public float[] getMediciones() {
         return mediciones;
     }
 
-    public void setMediciones(Medicion[] mediciones) {
+    public void setMediciones(float[] mediciones) {
         this.mediciones = mediciones;
     }
 }
