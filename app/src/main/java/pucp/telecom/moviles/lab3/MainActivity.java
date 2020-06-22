@@ -6,6 +6,18 @@ import android.os.Bundle;
 
 public class MainActivity extends AppCompatActivity {
 
+
+        public Data2 data2 = new Data2();
+
+        public void asignarData(){
+            data2.setTiempo(3);
+            data2.
+
+        }
+
+
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -13,7 +25,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    public void guardarEnLaNube(View view){
+    public void guardarEnLaNube(View view, Medicion medicion){
         String url = "http://ec2-34-234-229-191.compute-1.amazonaws.com:5000/saveData";
         String apikey= KCDk3WQ4goIicvcus7xnGTXCZTbBxC;
 
@@ -22,10 +34,6 @@ public class MainActivity extends AppCompatActivity {
                     @Override
                     public void onResponse(String response) {
                         Log.d("resul_nube", response);
-
-
-                        /*Gson gson = new Gson();
-                        ResultTrabajo estado_Trabajo = gson.fromJson(response,ResultTrabajo.class);*/
 
 
                     }
