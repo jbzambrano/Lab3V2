@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         Log.d("Path",dir.getPath());
 
         // Le damos un nombre al archivo
-        String fileName = "fileJson";
+        String fileName = "fileJson ";
 
         File file = new File(dir, "archivo1.txt");
         Log.d("fileName",file.getName());
