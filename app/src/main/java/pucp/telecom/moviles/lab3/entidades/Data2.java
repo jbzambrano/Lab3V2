@@ -3,7 +3,6 @@ package pucp.telecom.moviles.lab3.entidades;
 public class Data2 {
 
 
-
     private double longitud;
     private double latitud;
     private double[] medicion;
@@ -41,14 +40,13 @@ public class Data2 {
         this.latitud = latitud;
     }
 
+
     public double[] getMedicion() {
         return medicion;
     }
 
     public void setMedicion(double[] medicion) {
         this.medicion = medicion;
+
     }
-
-
-
 }
