@@ -3,7 +3,7 @@ package pucp.telecom.moviles.lab3.entidades;
 public class Data1 {
 
     private int tiempo;
-    private double[] sonidoDb;
+    private double[] mediciones;
 
     public int getTiempo() {
         return tiempo;
@@ -13,11 +13,11 @@ public class Data1 {
         this.tiempo = tiempo;
     }
 
-    public double[] getSonidoDb() {
-        return sonidoDb;
+    public double[] getMediciones() {
+        return mediciones;
     }
 
-    public void setSonidoDb(double[] sonidoDb) {
-        this.sonidoDb = sonidoDb;
+    public void setMediciones(double[] mediciones) {
+        this.mediciones = mediciones;
     }
 }
