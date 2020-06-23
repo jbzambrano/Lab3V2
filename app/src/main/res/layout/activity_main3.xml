@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity3"
+    android:background="@drawable/gradient_background"
+    >
+
+    <TextView
+        android:id="@+id/status"
+        android:layout_width="116dp"
+        android:layout_height="48dp"
+        android:fontFamily="@font/kite_one"
+        android:gravity="center"
+        android:text="Valor"
+        android:textColor="#FFFFFF"
+        android:textSize="24sp"
+        app:layout_constraintBottom_toTopOf="@+id/buttonStop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart"
+        app:layout_constraintVertical_bias="0.516" />
+
+    <Button
+        android:id="@+id/buttonStart"
+        android:layout_width="169dp"
+        android:layout_height="50dp"
+        android:onClick="Empezar"
+        android:text="Iniciar Medicion"
+        android:textAllCaps="false"
+        android:background="@drawable/bd_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/idTittle"
+        app:layout_constraintVertical_bias="0.367" />
+
+    <Button
+        android:id="@+id/buttonStop"
+        android:layout_width="170dp"
+        android:layout_height="53dp"
+        android:onClick="Stop"
+        android:text="Detener Medicion"
+        android:textAllCaps="false"
+        android:background="@drawable/bd_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/buttonStart"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/buttonStart"
+        app:layout_constraintTop_toBottomOf="@+id/buttonStart"
+        app:layout_constraintVertical_bias="0.53" />
+
+    <TextView
+        android:id="@+id/idTittle"
+        android:layout_width="268dp"
+        android:layout_height="67dp"
+        android:fontFamily="@font/kite_one"
+        android:gravity="center"
+        android:text="Analizador de ruido"
+        android:textColor="#FFFFFF"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.101" />
+</androidx.constraintlayout.widget.ConstraintLayout>
